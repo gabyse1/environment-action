@@ -1,0 +1,103 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  @include set-font($fs: 1rem, $lh: 1.5);
+
+  @include mq {
+    font-size: 1rem;
+  }
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+a {
+  color: $dark;
+  line-height: 1;
+  text-decoration: none;
+  text-align: center;
+}
+
+a.nav__link {
+  margin: 0 0.5rem;
+  transition: color 100ms ease;
+  
+  .nav__icon-svg {
+    width: 1rem;
+    height: 1rem;
+    transition: transform 250ms ease-in-out;
+  }
+
+  &:hover {
+    .nav__icon-svg {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.container {
+  width: 100%;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: transparent;
+
+  @include mq {
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+
+  @include mql {
+    padding-left: 8em;
+    padding-right: 8em;
+  }
+}
+
+.section__title {
+  margin-bottom: 3rem;
+  font-size: 1.75rem;
+  font-weight: $fw-bold;
+  position: relative;
+
+  &::after {
+    display: table;
+    content: '';
+    width: 3rem;
+    height: 2px;
+    background-color: $accent;
+    transform-origin: center;
+    position: absolute;
+    top: calc(100% + 0.75rem);
+    left: calc(50% - 1.5rem);
+  }
+}
+
+.title__supporting-text {
+  @include set-font($ff:$ff-support, $fs:2rem, $color:$accent);
+}
+
+.section__link {
+  color: $white;
+  text-decoration: underline;
+}
+
+.button {
+  padding: 1.5rem 2rem;
+  background-color: $accent;
+  border: 1px solid $accent;
+  color: $white;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
