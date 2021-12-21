@@ -7,7 +7,7 @@
 }
 
 body {
-  @include set-font($fs: 1rem, $lh: 1.5);
+  @include set-font($fs: 1rem);
 
   @include mq {
     font-size: 1rem;
@@ -52,27 +52,31 @@ a.nav__link {
   align-items: flex-start;
   background-color: transparent;
 
+  > p {
+    text-align: center;
+  }
+
   @include mq {
-    padding-left: 5em;
-    padding-right: 5em;
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 
   @include mql {
-    padding-left: 8em;
-    padding-right: 8em;
+    padding-left: 8rem;
+    padding-right: 8rem;
   }
 }
 
 .section__title {
   margin-bottom: 3rem;
-  font-size: 1.75rem;
-  font-weight: $fw-bold;
+  @include set-font($fs: 1.75rem, $lh: 1, $fw: $fw-bold);
+  text-align: center;
   position: relative;
 
   &::after {
     display: table;
     content: '';
-    width: 3rem;
+    width: 2rem;
     height: 2px;
     background-color: $accent;
     transform-origin: center;
@@ -83,7 +87,7 @@ a.nav__link {
 }
 
 .title__supporting-text {
-  @include set-font($ff:$ff-support, $fs:2rem, $color:$accent);
+  @include set-font($ff:$ff-support, $fs: 1.5rem, $lh: 1, $color:$accent);
 }
 
 .section__link {
@@ -101,3 +105,31 @@ a.nav__link {
   text-transform: uppercase;
 }
 
+.desktop {
+  display: none;
+}
+
+@include mq {
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: block;
+  }
+}
+
+.figure-center-image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba($color: $gray, $alpha: 0.5);
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
