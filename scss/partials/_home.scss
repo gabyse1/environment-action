@@ -10,61 +10,106 @@
 }
 
 .main {
-  background-color: rgba($color: $gray, $alpha: 0.5);
+  background-color: rgba($color: $gray, $alpha: 0.2);
 }
 
-.main .container {
-  padding-top: 6em;
-  padding-bottom: 4em;
-  align-items: flex-start;
+.main {
+  .container {
+    padding-top: 6em;
+    padding-bottom: 4em;
+    
+    .main__caption {
+      .section__title {
+        @include set-font($ff:$ff-accent, $color:$accent, $fs: 2.5rem, $lh:1);
+        margin-top: 1rem;
+        margin-bottom: 0;
 
-  .main__caption {
-    max-width: 35rem;
+        &::after {
+          top: calc(100% + 1.5rem);
+        }
+      }
+      
+      .main__caption-description {
+        padding: 1rem;
+        background-color: $white;
+        border: 1px solid rgba($color: $gray, $alpha: 1);
+      }
+    }
 
-    .section__title {
-      @include set-font($ff:$ff-accent, $color:$accent, $fs: 3rem);
-      margin-top: 1rem;
-      margin-bottom: 0;
+    @include mq {
+      padding-top: 12rem;
 
-      &::after {
-        display: none;
+      .main__caption {
+        max-width: 60rem;
+
+        .main__caption-description {
+          padding: 1rem 2.5rem;
+        }
+      }
+    }
+  }
+
+  .only-home {
+    align-items: flex-start;
+  
+    .main__caption {
+      max-width: 41rem;
+
+      .section__title {
+        margin-top: 0.75rem;
+        text-align: left;
+
+        &::after {
+          display: none;
+        }
+      }
+  
+      .title__supporting-text {
+        text-align: left;
+      }
+
+      .main__caption-description {
+        padding: 1rem;
+        margin-top: 1.5rem;
+        background-color: rgba($color: $gray, $alpha: 0.1);
+        border: 2px solid $white;
+      }
+
+      .main__caption-date {
+        margin-top: 2.5rem;
+        @include set-font($ff:$ff-accent, $color:$dark, $fs:1.75rem);
+      }
+
+      .main__caption-location {
+        margin-top: 0.25rem;
+        font-size: 1.25rem;
       }
 
       @include mq {
-        font-size: 3.5rem;
+        .section__title {
+          font-size: 3.5rem;
+        }
+
+        .title__supporting-text {
+          font-size: 2rem;
+        }
+
+        .main__caption-description {
+          margin-top: 1rem;
+        }
       }
-    }
-    
-    .main__caption-description {
-      padding: 1em;
-      margin-top: 1.5rem;
-      background-color: rgba($color: $gray, $alpha: 0.1);
-      border: 3px solid $white;
-    }
-
-    .main__caption-date {
-      margin-top: 2rem;
-      @include set-font($ff:$ff-accent, $color:$dark, $fs:1.75rem);
-    }
-
-    .main__caption-location {
-      margin-top: 1rem;
-      font-size: 1.25rem;
-    }
-  }
-
-  @include mq {
-    padding-top: 12rem;
-
-    .main__caption {
-      max-width: 660px;
     }
   }
 }
+
 
 .main__program {
   background-color: rgba($color: $dark, $alpha: 1);
   color: $white;
+  
+  .section__title {
+    color: $white;
+  }
 
   .main__program-list {
     width: 100%;
@@ -165,24 +210,10 @@
     margin-bottom: 1rem;
   }
 
-  .speaker__card:nth-of-type(odd) {
-    margin-right: 1rem;
-  }
-
   .speaker__card-figure {
-    width: 30%;
-    height: 140px;
-    max-width: 150px;
+    max-width: 10rem;
+    height: 10rem;
     margin-right: 1rem;
-    display: flex;
-    align-items: center;
-    background-color: rgba($color: $gray, $alpha: 0.5);
-
-    img {
-      width: 100%;
-      height: auto;
-      object-fit: cover;
-    }
   }
 
   .speaker__card-caption {
@@ -220,6 +251,19 @@
 
   @include mq {
     grid-template-columns: repeat(2, 1fr);
+
+    .speaker__card:nth-of-type(odd) {
+      margin-right: 1rem;
+    }
+
+    .speaker__card:nth-of-type(even) {
+      margin-left: 1rem;
+    }
+
+    .speaker__card-figure {
+      max-width: 11.25rem;
+      height: 11.25rem;
+    }
   }
 }
 
@@ -241,7 +285,10 @@
 
 .partners {
   background-color: $dark;
-  color: $white;
+  
+  .section__title {
+    color: white;
+  }
 
   .partners__list {
     flex-direction: row;
@@ -263,11 +310,41 @@
 }
 
 .footer__credentials {
+  background-color: $white;
+  color: $dark;
+
   .container {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+  }
+
+  img {
+    margin-right: 1rem;
+  }
+
+  .description {
+    margin-left: 1rem;
+    font-size: 0.8rem;
+
+    p.desktop {
+      margin-top: 0.75rem;
+    }
+  }
+
+  p {
+    text-align: left;
+  }
+
+  @include mq {
+    background-color: $dark;
+    color: $white;
+
+    &.only-home {
+      background-color: $white;
+      color: $dark;
+    }
   }
 }
