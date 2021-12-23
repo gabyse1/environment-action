@@ -1,4 +1,10 @@
-@mixin mq($min-width: 48em) {
+@mixin mqs($min-width: 28.125rem) {
+  @media (min-width: $min-width){
+    @content;
+  }
+}
+
+@mixin mq($min-width: 48rem) {
   @media (min-width: $min-width){
     @content;
   }

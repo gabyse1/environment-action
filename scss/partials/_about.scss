@@ -80,6 +80,7 @@
     margin-top: 2.5rem;
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
     
     .past-event__card {
       max-width: 31.25rem;
@@ -117,6 +118,7 @@
   @include mq {
     .past-event__cards {
       grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 1fr;
       
       .past-event__card:nth-of-type(odd) {
         margin-right: 0.5rem;
