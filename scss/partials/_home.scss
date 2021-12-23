@@ -32,7 +32,6 @@
     max-width: 10rem;
     height: 10rem;
     margin-right: 1rem;
-    box-shadow: -5px -5px 4px rgba($color: $gray, $alpha: 1);
   }
 
   .speaker__card-caption {
@@ -113,9 +112,10 @@
   align-items: center;
   flex-wrap: nowrap;
 
-  span {
-    color: $accent;
-    font-size: 1.5rem;
+  img {
+    width: 0.75rem;
+    height: auto;
+    margin-left: 0.5rem;
   }
 
   @include mq {

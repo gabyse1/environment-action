@@ -156,7 +156,6 @@ a.nav__link:hover .nav__icon-svg {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(211, 211, 211, 0.5);
 }
 
 .figure-center-image img {
@@ -495,7 +494,6 @@ header > * {
   max-width: 10rem;
   height: 10rem;
   margin-right: 1rem;
-  box-shadow: -5px -5px 4px lightgray;
 }
 
 .speaker__cards .speaker__card-caption {
@@ -589,9 +587,10 @@ header > * {
   flex-wrap: nowrap;
 }
 
-.speakers__button-more span {
-  color: #ec5242;
-  font-size: 1.5rem;
+.speakers__button-more img {
+  width: 0.75rem;
+  height: auto;
+  margin-left: 0.5rem;
 }
 
 @media (min-width: 48rem) {
