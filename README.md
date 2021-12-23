@@ -3,6 +3,7 @@
 > The objective of this capstone project is to build a suitable website to publicize the early arrival of a new edition of the conference and exhibition that Environment Action organizes every two years.
 
 ![screenshot desktop](./screenshot-desktop.png)
+
 ![screenshot mobile](./screenshot-mobile.png)
 
 > This conference focuses on keeping active and united the environmental initiatives that independent institutions and individuals in Latin America have been developing, seeking to rebuild the balance of the ecosystem in this part of the planet.
@@ -15,7 +16,7 @@
 
 ### Mobile
 - It displays less information in some sections like speaker and foother.
-- It displays a hamburger menu button. By clicking on the icon it display the menu in a modal window.
+- It displays a hamburger menu button. By clicking on the icon it display the menu in a modal window with a smooth effect.
 
 ### Desktop
 - It displays more information that mobile.
