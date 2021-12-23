@@ -27,7 +27,7 @@ header > * {
     flex-direction: row;
     justify-content: flex-end;
   }
-  
+
   .nav__list-item {
     display: flex;
     justify-content: center;
@@ -152,7 +152,7 @@ header > * {
   .button__menu-bar {
     background-color: rgba($color: $white, $alpha: 1);
     transform: rotate(45deg);
-    
+
     &::before {
       background-color: rgba($color: $white, $alpha: 1);
       top: 0;
@@ -162,7 +162,7 @@ header > * {
     &::after {
       background-color: rgba($color: $white, $alpha: 1);
       top: 0;
-      transform: rotate(90deg)
+      transform: rotate(90deg);
     }
   }
 }
@@ -195,7 +195,7 @@ header > * {
         color: rgba($color: $white, $alpha: 1);
       }
     }
-    
+
     .nav__list-item:last-of-type {
       display: none;
     }
@@ -244,7 +244,7 @@ header > * {
 
         &:hover {
           border: 4px solid rgba($color: $dark, $alpha: 0.75);
-          
+
           .nav__link {
             color: rgba($color: $dark, $alpha: 1);
           }

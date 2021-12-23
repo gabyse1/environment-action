@@ -3,8 +3,9 @@
 
 @font-face {
   font-family: 'Cocogoose';
-  src: url("../fonts/Cocogoose_trial.woff") format("woff"),
-       url("../fonts/Cocogoose_trial.eot") format("eot");
+  src:
+    url("../fonts/Cocogoose_trial.woff") format("woff"),
+    url("../fonts/Cocogoose_trial.eot") format("eot");
 }
 
 $ff-accent: 'Cocogoose', sans-serif;

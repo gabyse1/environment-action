@@ -1,17 +1,17 @@
 @mixin mqs($min-width: 28.125rem) {
-  @media (min-width: $min-width){
+  @media (min-width: $min-width) {
     @content;
   }
 }
 
 @mixin mq($min-width: 48rem) {
-  @media (min-width: $min-width){
+  @media (min-width: $min-width) {
     @content;
   }
 }
 
-@mixin mql($min-width: 62.5rem){
-  @media (min-width: $min-width){
+@mixin mql($min-width: 62.5rem) {
+  @media (min-width: $min-width) {
     @content;
   }
 }

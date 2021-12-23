@@ -29,7 +29,7 @@ a {
 a.nav__link {
   margin: 0 0.5rem;
   transition: color 100ms ease;
-  
+
   .nav__icon-svg {
     width: 1rem;
     height: 1rem;
@@ -69,7 +69,9 @@ a.nav__link {
 
 .section__title {
   margin-bottom: 3rem;
+
   @include set-font($fs: 1.75rem, $lh: 1, $fw: $fw-bold);
+
   text-align: center;
   position: relative;
 
