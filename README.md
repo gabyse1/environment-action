@@ -74,6 +74,7 @@ Give a ⭐️ if you like this project!
 - Linters: [Microverse](https://github.com/microverseinc/linters-config)
 - Readme template: [Microverse](https://github.com/microverseinc/readme-template)
 - Design guidelines: [Behance](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)
+- Some partner logos were copied from actual institutions.
 
 ## 📝 License
 
