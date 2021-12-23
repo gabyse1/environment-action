@@ -81,7 +81,7 @@ header > * {
     }
   }
 
-  @include mql($min-width: 875px) {
+  @include mql($min-width: 960px) {
     .container {
       flex-direction: row;
       justify-content: space-between;

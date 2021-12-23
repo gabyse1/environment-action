@@ -225,9 +225,9 @@
 
 .main__program {
   background-color: rgba($color: #272a31, $alpha: 0.9);
-  background-image: url(../../images/textura-hojas.svg);
-  background-repeat: repeat;
+  background-image: url('../images/textura-hojas.svg');
   background-position: center;
+  background-size: cover;
   color: $white;
 
   .section__title {
@@ -389,7 +389,7 @@
 }
 
 .main {
-  background-image: url('../../images/main-background.svg');
+  background-image: url('../images/main-background.svg');
   background-position: center;
   background-size: cover;
 
