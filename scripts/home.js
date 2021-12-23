@@ -10,31 +10,30 @@ function createObjSpeaker(image, name, experiece, studies) {
     name,
     experiece,
     studies,
-    idSpeaker
+    idSpeaker,
   };
 
   arrSpeakers.push(obj);
 }
 
 createObjSpeaker('images/vivienne-chon.png', 'Vivienne Chon',
-  `Professor of Ecology and Environment at Dartmouth College`,
-  `Chon studied Environmental science, and published several investigations`);
+  'Professor of Ecology and Environment at Dartmouth College',
+  'Chon studied Environmental science, and published several investigations');
 createObjSpeaker('images/john-rogers.jpg', 'John Rogers',
-  `Director de “Sustainable” en Mexico`,
-  `Promueve la producción de biogás en base a residuos sólidos de animales`);
+  'Director de “Sustainable” en Mexico',
+  'Promueve la producción de biogás en base a residuos sólidos de animales');
 createObjSpeaker('images/haydee-pacheco.jpg', 'Haydee Pacheco',
-  `Directora de la ONG “Give a chance” en Perú`,
-  `Impulsora del uso de SUTRANE, un sistema natural de depuración de aguas negras`);
+  'Directora de la ONG “Give a chance” en Perú',
+  'Impulsora del uso de SUTRANE, un sistema natural de depuración de aguas negras');
 createObjSpeaker('images/nora-izza.jpg', 'Nora Izza',
-  `Activista medioambiental en Colombia`,
-  `Izza es un defensor férreo contra la tala indiscriminada de bosques`);
+  'Activista medioambiental en Colombia',
+  'Izza es un defensor férreo contra la tala indiscriminada de bosques');
 createObjSpeaker('images/victor-pers.png', 'Victor Pers',
-  `Creadora de “Make a chage” en Guatemala`,
-  `Proyecto de tratamiento de residuos sólidos en zonas urbanas`);
+  'Creadora de “Make a chage” en Guatemala',
+  'Proyecto de tratamiento de residuos sólidos en zonas urbanas');
 createObjSpeaker('images/carlos-estrada.jpg', 'Carlos Estrada',
-  `Creador de “Un millón de árboles para la vida” en Bolivia`,
-  `Iniciativa que busca fomentar la reforestación con especies nativas`);
-
+  'Creador de “Un millón de árboles para la vida” en Bolivia',
+  'Iniciativa que busca fomentar la reforestación con especies nativas');
 
 const speakerCardsBox = document.querySelector('.speaker__cards');
 
@@ -42,9 +41,8 @@ function createSpeakerCards() {
   let cardHtml = '';
 
   arrSpeakers.forEach((card) => {
-
-    if (card.idSpeaker > 2) cardHtml += `<div class="speaker__card hide-card hide-card-toggle">`;
-    else cardHtml += `<div class="speaker__card">`;
+    if (card.idSpeaker > 2) cardHtml += '<div class="speaker__card hide-card hide-card-toggle">';
+    else cardHtml += '<div class="speaker__card">';
 
     cardHtml += `<figure class="speaker__card-figure figure-center-image">
             <img src="${card.image}" alt="${card.name}'s photo">
@@ -65,14 +63,14 @@ createSpeakerCards();
 const speakerButtonMore = document.querySelector('.speakers__button-more');
 let speakerToggleActive = false;
 
-const displayAllSpeakers = _ => {
+const displayAllSpeakers = () => {
   const hideSpeakerCards = document.querySelectorAll('.hide-card-toggle');
   hideSpeakerCards.forEach((card) => {
     card.classList.toggle('hide-card');
   });
 
-  speakerToggleActive = speakerToggleActive ? false : true;
+  speakerToggleActive = !speakerToggleActive;
   if (speakerToggleActive) speakerButtonMore.innerHTML = 'LESS';
   else speakerButtonMore.innerHTML = 'MORE';
-}
+};
 speakerButtonMore.addEventListener('click', displayAllSpeakers);
