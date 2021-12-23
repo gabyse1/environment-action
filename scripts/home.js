@@ -19,19 +19,19 @@ function createObjSpeaker(image, name, experiece, studies) {
 createObjSpeaker('images/vivienne-chon.png', 'Vivienne Chon',
   'Professor of Ecology and Environment at Dartmouth College',
   'Chon studied Environmental science, and published several investigations');
-createObjSpeaker('images/john-rogers.jpg', 'John Rogers',
+createObjSpeaker('images/john-rogers.png', 'John Rogers',
   'Director de “Sustainable” en Mexico',
   'Promueve la producción de biogás en base a residuos sólidos de animales');
-createObjSpeaker('images/haydee-pacheco.jpg', 'Haydee Pacheco',
+createObjSpeaker('images/haydee-pacheco.png', 'Haydee Pacheco',
   'Directora de la ONG “Give a chance” en Perú',
   'Impulsora del uso de SUTRANE, un sistema natural de depuración de aguas negras');
-createObjSpeaker('images/nora-izza.jpg', 'Nora Izza',
+createObjSpeaker('images/nora-izza.png', 'Nora Izza',
   'Activista medioambiental en Colombia',
   'Izza es un defensor férreo contra la tala indiscriminada de bosques');
 createObjSpeaker('images/victor-pers.png', 'Victor Pers',
   'Creadora de “Make a chage” en Guatemala',
   'Proyecto de tratamiento de residuos sólidos en zonas urbanas');
-createObjSpeaker('images/carlos-estrada.jpg', 'Carlos Estrada',
+createObjSpeaker('images/carlos-estrada.png', 'Carlos Estrada',
   'Creador de “Un millón de árboles para la vida” en Bolivia',
   'Iniciativa que busca fomentar la reforestación con especies nativas');
 
@@ -70,7 +70,7 @@ const displayAllSpeakers = () => {
   });
 
   speakerToggleActive = !speakerToggleActive;
-  if (speakerToggleActive) speakerButtonMore.innerHTML = 'LESS';
-  else speakerButtonMore.innerHTML = 'MORE';
+  if (speakerToggleActive) speakerButtonMore.innerHTML = 'LESS <img src="icons/chevron-up-solid.svg" alt="up chevrons icon">';
+  else speakerButtonMore.innerHTML = 'MORE <img src="icons/chevron-down-solid.svg" alt="down chevrons icon">';
 };
 speakerButtonMore.addEventListener('click', displayAllSpeakers);
