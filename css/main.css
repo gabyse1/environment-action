@@ -117,6 +117,7 @@ a.nav__link:hover .nav__icon-svg {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 
 .title__supporting-text {
