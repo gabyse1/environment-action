@@ -115,6 +115,7 @@ a.nav__link:hover .nav__icon-svg {
   background-image: linear-gradient(0deg, #ec5242, #b91a47);
   background-size: 100%;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 

@@ -93,6 +93,7 @@ a.nav__link {
   background-image: linear-gradient(0deg, #ec5242, #b91a47);
   background-size: 100%;
   -webkit-background-clip: text;
+  background-clip: text;
   // -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   // -moz-text-fill-color: transparent;
