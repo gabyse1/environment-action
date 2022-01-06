@@ -110,6 +110,14 @@ a.nav__link:hover .nav__icon-svg {
   left: calc(50% - 1.5rem);
 }
 
+.gradient__text {
+  background-color: #ec5242;
+  background-image: linear-gradient(0deg, #ec5242, #b91a47);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .title__supporting-text {
   font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;

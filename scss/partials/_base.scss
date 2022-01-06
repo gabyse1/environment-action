@@ -88,6 +88,17 @@ a.nav__link {
   }
 }
 
+.gradient__text {
+  background-color: #ec5242;
+  background-image: linear-gradient(0deg, #ec5242, #b91a47);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  // -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  // -moz-text-fill-color: transparent;
+  // background-clip: text;
+}
+
 .title__supporting-text {
   @include set-font($ff:$ff-support, $fs: 1.5rem, $lh: 1, $color:$accent);
 }
