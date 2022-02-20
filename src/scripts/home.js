@@ -61,7 +61,7 @@ createSpeakerCards();
 
 // Display hiden speaker cards
 const speakerButtonMore = document.querySelector('.speakers__button-more');
-let speakerToggleActive = false;
+const deskButton = speakerButtonMore.querySelectorAll('.btn__desc');
 
 const displayAllSpeakers = () => {
   const hideSpeakerCards = document.querySelectorAll('.hide-card-toggle');
@@ -69,8 +69,8 @@ const displayAllSpeakers = () => {
     card.classList.toggle('hide-card');
   });
 
-  speakerToggleActive = !speakerToggleActive;
-  if (speakerToggleActive) speakerButtonMore.innerHTML = 'LESS <img src="icons/chevron-up-solid.svg" alt="up chevrons icon">';
-  else speakerButtonMore.innerHTML = 'MORE <img src="icons/chevron-down-solid.svg" alt="down chevrons icon">';
+  deskButton.forEach((desc) => {
+    desc.classList.toggle('hide-element');
+  });
 };
 speakerButtonMore.addEventListener('click', displayAllSpeakers);

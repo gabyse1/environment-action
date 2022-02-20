@@ -16,12 +16,11 @@ $fw-normal: 400;
 $fw-semibold: 700;
 $fw-bold: 900;
 
-@mixin set-font($ff:$ff-body, $fs, $fw:$fw-normal, $ls:normal, $lh:1.6, $color:$dark, $tt:none) {
+@mixin set-font($ff:$ff-body, $fs, $fw:$fw-normal, $ls:normal, $lh:1.6, $tt:none) {
   font-family: $ff;
   font-size: $fs;
   font-weight: $fw;
   letter-spacing: $ls;
   line-height: $lh;
-  color: $color;
   text-transform: $tt;
 }

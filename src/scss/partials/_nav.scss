@@ -63,6 +63,30 @@ header > * {
   .logo {
     .logo-img {
       height: 2.5rem;
+
+      &.logo-base {
+        display: block;
+      }
+
+      &.logo-modal {
+        display: none;
+      }
+    }
+  }
+
+  .button__logo-modal {
+    height: 2.5rem;
+    position: fixed;
+    top: 1rem;
+    left: 1.5rem;
+    z-index: 110;
+
+    .logo-img.logo-base {
+      display: none;
+    }
+
+    .logo-img.logo-modal {
+      display: block;
     }
   }
 
@@ -93,14 +117,6 @@ header > * {
   }
 }
 
-.button__logo-modal {
-  height: 2.5rem;
-  position: fixed;
-  top: 1rem;
-  left: 1.5rem;
-  z-index: 110;
-}
-
 .button__menu {
   width: 2rem;
   height: 2rem;
@@ -114,7 +130,7 @@ header > * {
   .button__menu-bar {
     width: 26px;
     height: 3px;
-    background-color: rgba($color: $dark, $alpha: 0.8);
+    background-color: $accent;
     position: relative;
     transition: transform 500ms ease;
 
@@ -125,7 +141,7 @@ header > * {
       height: 3px;
       width: 100%;
       position: absolute;
-      background-color: rgba($color: $dark, $alpha: 0.8);
+      background-color: $accent;
       transition: transform 500ms ease;
     }
 
@@ -150,17 +166,17 @@ header > * {
   z-index: 110;
 
   .button__menu-bar {
-    background-color: rgba($color: $white, $alpha: 1);
+    background-color: $white;
     transform: rotate(45deg);
 
     &::before {
-      background-color: rgba($color: $white, $alpha: 1);
+      background-color: $white;
       top: 0;
       transform: rotate(90deg);
     }
 
     &::after {
-      background-color: rgba($color: $white, $alpha: 1);
+      background-color: $white;
       top: 0;
       transform: rotate(90deg);
     }
@@ -195,10 +211,6 @@ header > * {
         color: rgba($color: $white, $alpha: 1);
       }
     }
-
-    .nav__list-item:last-of-type {
-      display: none;
-    }
   }
 
   @include mq {
@@ -221,41 +233,15 @@ header > * {
           transition: color, transform 0.2s ease;
 
           &:hover {
-            color: $accent;
+            color: $blue;
             transform: scale(1.05);
           }
 
           &.active-page {
-            color: $accent;
+            color: $blue;
           }
         }
       }
-
-      .nav__list-item:last-of-type {
-        display: flex;
-        margin-left: 1.5rem;
-        border: 4px solid $accent;
-        transition: border 0.5s ease;
-
-        .nav__link:last-of-type {
-          color: $accent;
-          margin: 0 0.5em;
-        }
-
-        &:hover {
-          border: 4px solid rgba($color: $dark, $alpha: 0.75);
-
-          .nav__link {
-            color: rgba($color: $dark, $alpha: 1);
-          }
-        }
-      }
-    }
-  }
-
-  @include mql {
-    .nav__list-item:last-of-type {
-      margin-left: 3rem;
     }
   }
 }

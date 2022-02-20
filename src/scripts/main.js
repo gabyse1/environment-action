@@ -7,6 +7,7 @@ let menuModalOpen = false;
 const menuModalClose = () => {
   menuNav.classList.toggle('nav__menu-modal');
   menuNav.removeEventListener('animationend', menuModalClose);
+  menuNav.style = '';
   menuModalOpen = false;
 };
 
