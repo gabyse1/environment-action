@@ -15,13 +15,14 @@
 - It displays the content in mobile and desktop viewport.
 
 ### Mobile
-- It displays less information in some sections like speaker and foother.
-- It displays a hamburger menu button. By clicking on the icon it display the menu in a modal window with a smooth effect.
+- It displays less information in some sections like speaker and footer.
+- Has a hamburger menu button.
+- A modla window menu is display by clicking on the menu button. It has a smoth effect.
 
 ### Desktop
-- It displays more information that mobile.
-- It displays de menu at the top of the page.
-- It display user interactions like hover.
+- It displays more information that mobile like a topheader, and all list of speakers.
+- The menu is placed at the top of the page.
+- Has user interactions like hover.
 
 ## Built With
 
@@ -29,7 +30,7 @@
 
 ## Live Demo
 
-[Environmet Action](https://gabyse1.github.io/repo-capston-project-01/)
+[Environmet Action](https://gabyse1.github.io/environment-action/)
 
 
 ## Getting Started
@@ -39,16 +40,17 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-- Have a computer
+- Have git installed on your local computer.
 
 ### Install
 
-- Install git on your local computer.
 - Clone this repository to your local computer. Choose the location you prefer.
+- Run the command *npm install* to install all project's dependencies.
 
 ### Deployment
 
-- Execute the index.html file to display the project.
+- Run the command line *npm run dev*.
+- The project will automatically open the *index.html* file in a browser.
 
 
 ## Authors
@@ -74,7 +76,6 @@ Give a ⭐️ if you like this project!
 
 - Linters: [Microverse](https://github.com/microverseinc/linters-config)
 - Readme template: [Microverse](https://github.com/microverseinc/readme-template)
-- Design guidelines: [Behance](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)
 - Some partner logos were copied from actual institutions.
 
 ## 📝 License
