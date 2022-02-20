@@ -1,5 +1,5 @@
 {
-  "name": "repo-capston-project-01",
+  "name": "environment-action",
   "version": "1.0.0",
   "description": "This is the first capston project.",
   "main": "main.js",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gabyse1/repo-capston-project-01.git"
+    "url": "git+https://github.com/gabyse1/environment-action.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/gabyse1/repo-capston-project-01/issues"
+    "url": "https://github.com/gabyse1/environment-action/issues"
   },
-  "homepage": "https://github.com/gabyse1/repo-capston-project-01#readme",
+  "homepage": "https://github.com/gabyse1/environment-action#readme",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "eslint": "^7.32.0",
