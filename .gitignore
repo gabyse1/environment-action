@@ -1,6 +1,7 @@
 node_modules/
+dist/
 .hintrc
 .stylelintrc.json
 .eslintrc.json
-package.json
-package-lock.json
+.htmlnanorc
+.cache
